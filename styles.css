@@ -1,0 +1,119 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    margin: 2% 5%;
+    cursor: url('pictures/curseur_coquillage2.2.png'), auto; /* Curseur personnalisé */
+}
+
+.shadow_header{
+    border: 1px solid black;
+    box-shadow: 3px 2px 0.5px rgba(0, 0, 0, 0.2); X-offset, Y-offset, flou, couleur
+}
+
+.shadow_border {
+    border: 1px solid black;
+    box-shadow: 3px 2px 0.5px rgba(0, 0, 0, 0.2); /* X-offset, Y-offset, flou, couleur */
+}
+
+#header_header{
+    background-color: white;
+    margin-bottom:20px;
+}
+
+#container_header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin:20px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+.logo .subtitle {
+    color: black;
+    letter-spacing: 1px;
+}
+
+.nav_header{
+    margin: 20px;
+}
+
+.ul_header {
+    list-style: none;
+    display: flex;
+}
+
+.ul_header a{
+    text-decoration: none; /* Pas de soulignement */
+    color: black; /* Couleur des liens */
+}
+
+.ul_header a:visited {
+    color: black; /* Assure que les liens visités sont aussi noirs */
+}
+
+
+.li_header {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.li_header a:hover{
+    color: rgb(192,192,192);
+    text-decoration: none; /* Pas de soulignement au survol */
+}
+
+#ocean_picture {
+    background-image: url('pictures/ocean.png');
+    background-size:cover;
+    background-position: center; /* Centre l'image dans la div */
+    height: 200px; /* Définir la hauteur de la div, ajustez selon vos besoins */
+}
+
+
+/* HIDDEN HEADER */
+
+#fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+#container_fixed_header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
