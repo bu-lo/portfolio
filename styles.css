@@ -1,30 +1,42 @@
-/* CSS reset */
+/* CSS RESET*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* GENERAL  */
+
 body {
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     margin: 2% 5%;
-    cursor: url('pictures/curseur_coquillage2.2.png'), auto; /* Curseur personnalisé */
-}
-
-.shadow_header{
-    border: 1px solid black;
-    box-shadow: 3px 2px 0.5px rgba(0, 0, 0, 0.2); X-offset, Y-offset, flou, couleur
 }
 
 .shadow_border {
     border: 1px solid black;
-    box-shadow: 3px 2px 0.5px rgba(0, 0, 0, 0.2); /* X-offset, Y-offset, flou, couleur */
+    box-shadow: 3px 2px 0.5px rgba(0, 0, 0, 0.2);
+    /* X-offset, Y-offset, flou, couleur */
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-#header_header{
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 20px;
+    text-align:justify;
+}
+
+
+/* HEADER */
+
+#header_header {
     background-color: white;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 #container_header {
@@ -36,13 +48,12 @@ body {
     align-items: center;
 }
 
-.logo{
-    margin:20px;
+.logo {
+    margin: 20px;
 }
 
 .logo h1 {
     font-size: 30px;
-    letter-spacing: 2px;
     margin-bottom: 5px;
     letter-spacing: 3px;
 }
@@ -52,7 +63,7 @@ body {
     letter-spacing: 1px;
 }
 
-.nav_header{
+.nav_header {
     margin: 20px;
 }
 
@@ -61,13 +72,16 @@ body {
     display: flex;
 }
 
-.ul_header a{
-    text-decoration: none; /* Pas de soulignement */
-    color: black; /* Couleur des liens */
+.ul_header a {
+    text-decoration: none;
+    /* Pas de soulignement */
+    color: black;
+    /* Couleur des liens */
 }
 
 .ul_header a:visited {
-    color: black; /* Assure que les liens visités sont aussi noirs */
+    color: black;
+    /* Assure que les liens visités sont aussi noirs */
 }
 
 
@@ -78,16 +92,25 @@ body {
     letter-spacing: 1px;
 }
 
-.li_header a:hover{
-    color: rgb(192,192,192);
-    text-decoration: none; /* Pas de soulignement au survol */
+.li_header a:hover {
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+    /* Pas de soulignement au survol */
 }
+
+
+/* PICTURE OCEAN 1 */
 
 #ocean_picture {
     background-image: url('pictures/ocean.png');
-    background-size:cover;
-    background-position: center; /* Centre l'image dans la div */
-    height: 200px; /* Définir la hauteur de la div, ajustez selon vos besoins */
+    background-size: cover;
+    background-position: center;
+    /* Centre l'image dans la div */
+    height: 200px;
+    /* Définir la hauteur de la div, ajustez selon vos besoins */
+    cursor: url('pictures/curseur_coquillage2.2.png'), auto;
+    /* Curseur personnalisé */
+    border-radius: 5px;
 }
 
 
@@ -117,3 +140,85 @@ body {
     align-items: center;
 }
 
+
+/* SECTION PRESENTATION / PHOTO PROFIL */
+
+#presentation_chloe {
+    padding:40px;
+    display: flex;
+    justify-content: space-evenly;
+    /*horizontalement */
+    align-items: center;
+    /*verticalement */
+}
+
+#pic_chloe_titre_aventure {
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+}
+
+#photo_container{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+}
+
+.photo_ronde {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#aventure_texte {
+    width: 40%;
+}
+
+#h1_aventure {
+    font-size: 60px;
+    letter-spacing: 4px;
+    line-height: 50px;
+    text-align: left;
+}
+
+#aventure_texte a{
+    text-decoration: none;
+    /* Pas de soulignement */
+    color:#054f84
+    /* Couleur des liens */
+}
+
+#aventure_texte a:visited {  
+    text-decoration: none;
+    /* Pas de soulignement */
+    color:#054f84
+    /* Assure que les liens visités sont aussi noirs */
+}
+
+#aventure_texte a:hover {
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+}
+
+/* SECTION 1 */
+
+#ocean_picture_section {
+    background-image: url('pictures/ocean.png');
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    cursor: url('pictures/curseur_coquillage2.2.png'), auto;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
+#ocean_picture_footer {
+    background-image: url('pictures/ocean.png');
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    cursor: url('pictures/curseur_coquillage2.2.png'), auto;
+    border-radius: 5px;
+}
