@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,10 +25,10 @@
             </div>
             <nav class="nav_header">
                 <ul class="ul_header">
-                    <li class="li_header"><a href="#presentation">PRESENTATION</a></li>
-                    <li class="li_header"><a href="#formation">FORMATION</a></li>
-                    <li class="li_header"><a href="#competences">COMPETENCES & PROJETS</a></li>
-                    <li class="li_header"><a href="#contacts">CONTACTS</a></li>
+                    <li class="li_header"><a href="#presentation_chloe">PRESENTATION</a></li>
+                    <li class="li_header"><a href="#container_slider_timeline">FORMATION</a></li>
+                    <li class="li_header"><a href="#competences_projets">COMPETENCES & PROJETS</a></li>
+                    <li class="li_header"><a href="#contacts_4_cards">CONTACTS</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,10 +42,10 @@
             </div>
             <nav class="nav_header">
                 <ul class="ul_header">
-                    <li class="li_header"><a href="#presentation">PRESENTATION</a></li>
-                    <li class="li_header"><a href="#formation">FORMATION</a></li>
-                    <li class="li_header"><a href="#competences">COMPETENCES & PROJETS</a></li>
-                    <li class="li_header"><a href="#contacts">CONTACTS</a></li>
+                    <li class="li_header"><a href="#presentation_chloe">PRESENTATION</a></li>
+                    <li class="li_header"><a href="#container_slider_timeline">FORMATION</a></li>
+                    <li class="li_header"><a href="#competences_projets">COMPETENCES & PROJETS</a></li>
+                    <li class="li_header"><a href="#contacts_4_cards">CONTACTS</a></li>
                 </ul>
             </nav>
         </div>
@@ -101,92 +102,98 @@
             <div class="slider-container">
                 <input type="range" id="articleSlider" min="1" max="5" step="1" value="3">
                 <div class="slider-ticks">
-                    <span>IBODE</span>
-                    <span>Triathlon</span>
-                    <span>CDA - AFPA</span>
-                    <span>Stage</span>
-                    <span>Projets</span>
+                    <span data-index="1">IBODE</span>
+                    <span data-index="2">Triathlon</span>
+                    <span data-index="3">CDA - AFPA</span>
+                    <span data-index="4">Stage</span>
+                    <span data-index="5">Projets</span>
                 </div>
+            </div>
 
-                <!-- Articles -->
-                <div id="article1" class="article">
+            <!-- Articles -->
+            <div id="article1" class="article">
+                <div class="picture_title">
                     <img src="pictures/nurse2.jpeg" alt="Article 1 Image">
                     <h2>IBODE</h2>
-                    <p>Infirmière de Bloc Opératoire Diplômée d'Etat sur Toulouse puis Bordeaux.<br>
+                </div>
+                <div class="p_article">
+                    <p>💉 / <b><U>Mon premier métier :</U></b><br><br> Infirmière de Bloc Opératoire Diplômée d'Etat
+                        (Bac+5) sur Toulouse puis Bordeaux.<br><br>
+                        Travail d'équipe / Communication / Gestion du stress / Anticipation / Rigueur et Précision, sont les
+                        piliers de cette profession.<br><br>
+                        <b>Certification: AFGSU niv.2 . </b>
                     </p>
                 </div>
+            </div>
 
-                <div id="article2" class="article">
+            <div id="article2" class="article">
+                <div class="picture_title">
                     <img src="pictures/aquathlon_black.jpeg" alt="Article 2 Image">
                     <h2>Triathlon</h2>
-                    <div class="p_article">
-                        <p>🌊 / <U>Le Sport :</U><br><br>
-                            Passionnée par des sports aquatiques, le sport a une place importante dans mon quotidien et mes valeurs:<br><br>
-                            Partage / Entraide / Collectif / Implication / Rigueur & Persévérance.
-                        </p>
-                        <p>🏊‍♀️🚴‍♀️🏃‍♀️ / <U>Triathlon :</U><br><br>
-                            - Natation et eaux libres,<br>
-                            - Swimrun,<br>
-                            - Triathlon.
-                        </p>
-                    </div>
                 </div>
-
-                <div id="article3" class="article active">
-                    <img src="pictures/whale.jpeg" alt="Article 3 Image">
-                    <h2>CDA - AFPA</h2>
-                    <div class="p_article">
-                        <p>📚 / <U>Formation de 1 an <br>(27/05/2024 au 16/05/2025):</U><br><br>
-                            1- <b>Langage de programmation</b> :<br> Java / Javascript / Typescript / PlpgSQL / HTML /
-                            CSS<br><br>
-                            2- <b>Frameworks interface graphique</b> :<br> REACT<br><br>
-                            3- <b>Framewoks code serveur</b> :<br> Spring / Springboot<br><br>
-                            4- <b>Conception/modélisation</b> :<br> UML / Merise / Design pattern<br><br>
-                            5- <b>Base de données</b> :<br> PostgreSQL / MySQL / Procédures
-                        </p>
-                        <p>
-                            6- <b>Méthodologies de travail</b> :<br>Test Driven Development / Extreme programming / +
-                            Intégration continue: Jenkins / Sonarqube<br><br>
-                            7- <b>Gestion de projets</b> :<br> SCRUM / Cycle en V<br><br>
-                            8- <b>Conception graphique</b> :<br> Figma<br><br>
-                            9- <b>Système de virtualisation</b> :<br> Docker
-                        </p>
-                    </div>
+                <div class="p_article">
+                    <p>🌊 / <b><U>Le Sport :</U></b><br><br>
+                        Passionnée par des sports aquatiques: Triathlon, Swimrun, Natation en eau libre.<br><br>
+                        Le sport a une place importante dans mon quotidien et mes valeurs:
+                        Partage / Entraide / Collectif / Implication / Régularité & Persévérance.
+                    </p>
                 </div>
+            </div>
 
-                <div id="article4" class="article">
-                    <img src="pictures/black_wave.jpeg" alt="Article 4 Image">
+            <div id="article3" class="article">
+                <div class="picture_title">
+                    <img src="pictures/black_wave.jpeg" alt="Article 3 Image">
+                    <h2>CDA - AFPA BORDEAUX</h2>
+                    <img id="whale_pic" src="pictures/whale.jpeg" alt="Article 3 Image">
+                </div>
+                <div class="p_article">
+                    <p id="AFPA">📚 / <b><U>Formation de 1 an (27/05/24 - 16/05/25) :</U></b><br><br>
+                        1- <b>Langage de programmation :</b> Java / Javascript / Typescript / PlpgSQL<br><br>
+                        2- <b>Front & Frameworks interface graphique :</b> HTML / CSS / REACT<br><br>
+                        3- <b>Framewoks code serveur</b> : Spring / Springboot<br><br>
+                        4- <b>Conception/modélisation</b> : UML / Merise / Design pattern<br><br>
+                        5- <b>Base de données</b> : PostgreSQL / MySQL / Procédures<br><br>
+                        6- <b>Méthodologies de travail</b> : Test Driven Development / Extreme programming<br><br>
+                        <b>+ Intégration continue</b>: Jenkins / Sonarqube<br><br>
+                        7- <b>Gestion de projets</b> : SCRUM / Cycle en V<br><br>
+                        8- <b>Conception graphique</b> : Figma<br><br>
+                        9- <b>Système de virtualisation</b> : Docker
+                    </p>
+                </div>
+            </div>
+
+            <div id="article4" class="article">
+                <div class="picture_title">
+                    <img src="pictures/bordeaux.jpeg" alt="Article 4 Image">
                     <h2>Stage</h2>
-                    <div class="p_article">
-                        <p>🔑 / <U>Dates Clés :</U><br><br>
-                            - Stage de 10 semaines en entreprise,<br>
-                            - 06/01/2025 au 28/03/2025.
-                        </p>
-                        <p>
-                            💡 / <U>Informations utiles :</U><br><br>
-                            - Non rémunéré,<br>
-                            - Période d'essai gratuite.
-                        </p>
-                    </div>
                 </div>
+                <div class="p_article">
+                    <p>🔑 / <b><U>Dates Clés :</U></b><br><br>
+                        - Stage de 10 semaines en entreprise,<br>
+                        - 06/01/2025 au 28/03/2025.<br><br><br>
 
-                <div id="article5" class="article">
-                    <img src="pictures/future.jpeg" alt="Article 5 Image">
+                        💡 / <b><U>Informations utiles :</U></b><br><br>
+                        - Non rémunéré,<br>
+                        - Période d'essai gratuite.
+                    </p>
+                </div>
+            </div>
+
+            <div id="article5" class="article">
+                <div class="picture_title">
+                    <img src="pictures/project.jpeg" alt="Article 5 Image">
                     <h2>Projets</h2>
+                </div>
+                <div class="p_article">
+                    <p>💻 / <b><U>Développement Front-End :</U></b><br><br>
+                        - Expérience utilisateur (UX),<br>
+                        - Design & Graphisme (UI),<br>
+                        - Accessibilité.<br><br><br>
 
-                    <div class="p_article">
-                        <p>💻 / <U>Développement Front-End :</U><br><br>
-                            - Expérience utilisateur (UX),<br>
-                            - Design & Graphisme (UI),<br>
-                            - Accessibilité.
-                        </p>
-                        <p>
-                            🤝 / <U>Gestion de projet :</U><br><br>
-                            - Planification, gestion d'équipe,<br>
-                            - Management.
-                        </p>
-                    </div>
-
+                        🤝 / <b><U>Gestion de projet :</U></b><br><br>
+                        - Planification, gestion d'équipe,<br>
+                        - Management.
+                    </p>
                 </div>
 
             </div>
@@ -196,12 +203,51 @@
             <div id="ocean_picture_section"></div>
         </div>
 
-        <div id="container_picture_section" class="shadow_border">
-            <div id="ocean_picture_section"></div>
+        <div id="competences_projets">
+
         </div>
 
         <div id="container_picture_section" class="shadow_border">
             <div id="ocean_picture_section"></div>
+        </div>
+
+        <div class="contact shadow_border">
+            <div id="contacts_4_cards">
+                <a id="adress" class="contact_card"
+                    href="https://www.marmiton.org/recettes/recette_canneles-bordelais_11439.aspx" target="_blank">
+                    <div class="card_circle">
+                        <div class="card_circle_icon"><i class="fa-solid fa-location-dot"></i></div>
+                    </div>
+                    <div class="card_heading">Adresse</div>
+                    <div class="info">33000 - Bordeaux</div>
+                </a>
+
+                <a id="telnumber" class="contact_card" href="tel:+33604138029">
+                    <div class="card_circle">
+                        <div class="card_circle_icon"><i class="fa-solid fa-phone"></i></div>
+                    </div>
+                    <div class="card_heading">N° de Téléphone</div>
+                    <div class="info">+33604138029</div>
+                </a>
+
+                <a id="mail" class="contact_card" href="mailto:chloe.boivin@outlook.com">
+                    <div class="card_circle">
+                        <div class="card_circle_icon"><i class="fa-solid fa-envelope"></i></div>
+                    </div>
+                    <div class="card_heading">Adresse Mail</div>
+                    <div class="info">chloe.boivin@outlook.com</div>
+                </a>
+
+                <a id="linkedin" class="contact_card" href="https://www.linkedin.com/in/chloé-boivin" target="_blank">
+                    <div class="card_circle">
+                        <div class="card_circle_icon"><i class="fa-brands fa-linkedin"></i></div>
+                    </div>
+                    <div class="card_heading">Linkedin</div>
+                    <div class="info">Chloé Boivin</div>
+                </a>
+
+            </div>
+
         </div>
 
     </main>
@@ -212,7 +258,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
