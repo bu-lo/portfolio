@@ -1,3 +1,8 @@
+/* ON LOAD RESET */
+window.onload = function() {
+    window.scrollTo(0, 0); // Forcer le scroll en haut au chargement
+};
+
 /* HEADER SCROLLLING */
 
 window.addEventListener("scroll", function () {
