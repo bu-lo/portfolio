@@ -5,6 +5,11 @@ window.onload = function() {
 
 document.activeElement.blur();
 
+if (window.location.hash) {
+    window.history.replaceState(null, null, ' ');
+    window.scrollTo(0, 0); // Remonter en haut
+}
+
 
 /* HEADER SCROLLLING */
 
