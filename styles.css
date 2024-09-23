@@ -319,8 +319,6 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .article img {
     margin-top: 30px;
-    /* width: 100%;
-    height: auto; */
     width: 400px;
     height: 260px;
     border-radius: 5px;
@@ -351,6 +349,9 @@ input[type="range"]::-webkit-slider-runnable-track {
     font-style: normal;
     font-size: 16px;
     letter-spacing:1px;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .img_icon{
@@ -365,11 +366,6 @@ input[type="range"]::-webkit-slider-runnable-track {
     text-align:left;
 }
 
-.p_article p span{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
 
 /* PROJETS & COMPETENCES */
 
