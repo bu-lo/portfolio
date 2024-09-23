@@ -3,6 +3,9 @@ window.onload = function() {
     window.scrollTo(0, 0); // Forcer le scroll en haut au chargement
 };
 
+document.activeElement.blur();
+
+
 /* HEADER SCROLLLING */
 
 window.addEventListener("scroll", function () {
