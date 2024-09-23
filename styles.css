@@ -10,7 +10,8 @@
 body {
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
-    margin: 2% 5%;
+    margin: 2% auto;
+    max-width: 1200px;
 }
 
 .shadow_border {
@@ -41,7 +42,6 @@ p {
 
 #container_header {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -173,6 +173,9 @@ p {
 
 #aventure_texte {
     width: 40%;
+    background-color: #E3ECF1;
+    border-radius: 5%;
+    padding:20px;
 }
 
 #h1_aventure {
@@ -292,7 +295,6 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 
-
 /* 5 IMAGES + TEXTE */
 
 .article {
@@ -324,10 +326,6 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 5px;
 }
 
-#whale_pic{
-    margin-top: 0px;
-}
-
 .article h2 {
     font-size: 30px;
     margin: 10px 0;
@@ -342,13 +340,94 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .p_article p{
     text-align:justify;
-    border: 1px solid black;
-    border-radius: 5px;
     padding:30px;
+    /* border: 1px solid black; */
+    background-color: #E3ECF1;
+    border-radius: 5px;
 }
+
+.p_article p span{
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing:1px;
+}
+
+.img_icon{
+    width: 40px !important;
+    height: 40px !important; /* Forcer une taille fixe pour la hauteur */
+    object-fit: contain;
+    margin-top:0px !important;
+}
+
 
 #AFPA{
     text-align:left;
+}
+
+.p_article p span{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* PROJETS & COMPETENCES */
+
+#skills_projects{
+    display:flex;
+    justify-content:center
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    width:80%;
+    gap: 30px;
+}
+
+/* .project:hover{
+    background-color: #36576a;
+    color:white;
+} */
+
+.project{
+    padding:30px;
+    width: 47%;
+    height: auto;
+    background-color: #E3ECF1;
+    border-radius: 5px;
+}
+
+.project_image{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.project h2{
+    letter-spacing: 2px;
+}
+
+.project p{
+    text-align:left;
+}
+
+
+.project p a{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    letter-spacing:1px;
+}
+
+#second_button{
+    margin-left:4px;
 }
 
 /* CONTACTS */
@@ -406,15 +485,14 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .card_heading {
-    font-weight: bold;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .info {
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .card_link {
@@ -432,3 +510,53 @@ input[type="range"]::-webkit-slider-runnable-track {
     cursor: url('pictures/curseur_coquillage2.2.png'), auto;
     border-radius: 5px;
 }
+
+/* UP */
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 0.5%;
+    z-index: 100;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scrollTopBtn:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+
+@media (max-width: 1300px) {
+    
+    body {
+        font-family: "Bebas Neue", sans-serif;
+        font-style: normal;
+        margin: 2% 5%;
+    }
+
+    /* CONTACT */
+    .card_heading {
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    
+    .info {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 12px;
+    }
+} 

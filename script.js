@@ -44,6 +44,21 @@ function showArticle(value) {
     if (selectedTick) {
         selectedTick.classList.add('active');
     }
+
+    // Scroller vers l'article correspondant (défilement fluide)
+    scrollToArticle(selectedArticle);
+}
+
+// Fonction pour effectuer un défilement fluide vers l'article
+function scrollToArticle(article) {
+    const headerOffset = 220; // Hauteur du header fixe (ajustez selon vos besoins)
+    const elementPosition = article.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
 }
 
 // Écouter les changements sur le slider
@@ -81,3 +96,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+/* UP */
+
+window.onscroll = function() {
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    // Montre le bouton après avoir scrollé de 100px
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.classList.add("show");
+    } else {
+        scrollTopBtn.classList.remove("show");
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
