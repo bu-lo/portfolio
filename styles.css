@@ -29,7 +29,7 @@ p {
     font-weight: 500;
     font-style: normal;
     line-height: 20px;
-    text-align:justify;
+    text-align: justify;
 }
 
 
@@ -98,6 +98,15 @@ p {
     /* Pas de soulignement au survol */
 }
 
+/* Menu burger */
+.burger-icon {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
 
 /* PICTURE OCEAN 1 */
 
@@ -144,7 +153,7 @@ p {
 /* SECTION PRESENTATION / PHOTO PROFIL */
 
 #presentation_chloe {
-    padding:40px;
+    padding: 40px;
     display: flex;
     justify-content: space-evenly;
     /*horizontalement */
@@ -154,14 +163,14 @@ p {
 
 #pic_chloe_titre_aventure {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 40%;
 }
 
-#photo_container{
-        display: flex;
-        justify-content: right;
-        width: 100%;
+#photo_container {
+    display: flex;
+    justify-content: right;
+    width: 100%;
 }
 
 .photo_ronde {
@@ -175,7 +184,7 @@ p {
     width: 40%;
     background-color: #E3ECF1;
     border-radius: 5%;
-    padding:20px;
+    padding: 20px;
 }
 
 #h1_aventure {
@@ -185,18 +194,18 @@ p {
     text-align: left;
 }
 
-#aventure_texte a{
+#aventure_texte a {
     text-decoration: none;
     /* Pas de soulignement */
-    color:#054f84
-    /* Couleur des liens */
+    color: #054f84
+        /* Couleur des liens */
 }
 
-#aventure_texte a:visited {  
+#aventure_texte a:visited {
     text-decoration: none;
     /* Pas de soulignement */
-    color:#054f84
-    /* Assure que les liens visités sont aussi noirs */
+    color: #054f84
+        /* Assure que les liens visités sont aussi noirs */
 }
 
 #aventure_texte a:hover {
@@ -220,7 +229,7 @@ p {
 /* TIMELINE */
 
 .slider-container {
-    margin-top:30px;
+    margin-top: 30px;
     position: relative;
     width: 600px;
     margin-left: auto;
@@ -232,10 +241,13 @@ input[type="range"] {
     width: 500px;
     display: block;
     margin: 0 auto;
-    -webkit-appearance: none; 
-    height: 5px; /* Épaisseur de la barre */
-    background: black; /* Couleur de la barre */
-    border-radius: 5px; /* Rendre la barre légèrement arrondie */
+    -webkit-appearance: none;
+    height: 5px;
+    /* Épaisseur de la barre */
+    background: black;
+    /* Couleur de la barre */
+    border-radius: 5px;
+    /* Rendre la barre légèrement arrondie */
     outline: none;
 }
 
@@ -280,7 +292,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     font-size: 16px;
     width: 120px;
     color: black;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .slider-ticks span:hover {
@@ -289,9 +301,11 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .slider-ticks span.active {
-    color: black; /* Couleur du texte */
+    color: black;
+    /* Couleur du texte */
     background-color: #E3ECF1;
-    border-radius: 5px; /* Optionnel : adoucit les coins du contour */
+    border-radius: 5px;
+    /* Optionnel : adoucit les coins du contour */
 }
 
 
@@ -301,7 +315,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     display: none;
 }
 
-.article.active{
+.article.active {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -310,11 +324,11 @@ input[type="range"]::-webkit-slider-runnable-track {
     width: 90%;
 }
 
-.picture_title{
+.picture_title {
     width: 45%;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .article img {
@@ -331,55 +345,57 @@ input[type="range"]::-webkit-slider-runnable-track {
     text-align: left;
 }
 
-.p_article{
+.p_article {
     margin-top: 30px;
     width: 40%;
 }
 
-.p_article p{
-    text-align:justify;
-    padding:30px;
-    /* border: 1px solid black; */
+.p_article p {
+    text-align: justify;
+    padding: 30px;
     background-color: #E3ECF1;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.p_article p span{
+.p_article p span {
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     font-size: 16px;
-    letter-spacing:1px;
-    display:flex;
-    align-items:center;
-    gap:10px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
 }
 
-.img_icon{
+.img_icon {
     width: 40px !important;
-    height: 40px !important; /* Forcer une taille fixe pour la hauteur */
+    height: 40px !important;
+    /* Forcer une taille fixe pour la hauteur */
     object-fit: contain;
-    margin-top:0px !important;
+    margin-top: 0px !important;
 }
 
 
-#AFPA{
-    text-align:left;
+#AFPA {
+    text-align: left;
 }
 
 
 /* PROJETS & COMPETENCES */
 
-#skills_projects{
-    display:flex;
-    justify-content:center
+#skills_projects {
+    display: flex;
+    justify-content: center
 }
 
-.projects{
+.projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 30px;
-    width:80%;
+    width: 80%;
     gap: 30px;
 }
 
@@ -388,30 +404,30 @@ input[type="range"]::-webkit-slider-runnable-track {
     color:white;
 } */
 
-.project{
-    padding:30px;
+.project {
+    padding: 30px;
     width: 47%;
     height: auto;
     background-color: #E3ECF1;
     border-radius: 5px;
 }
 
-.project_image{
+.project_image {
     width: 100%;
     height: auto;
     padding: 10px 0px;
 }
 
-.project h2{
+.project h2 {
     letter-spacing: 2px;
 }
 
-.project p{
-    text-align:left;
+.project p {
+    text-align: left;
 }
 
 
-.project p a{
+.project p a {
     color: white;
     background-color: black;
     border-radius: 5px;
@@ -419,27 +435,27 @@ input[type="range"]::-webkit-slider-runnable-track {
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
-    letter-spacing:1px;
+    letter-spacing: 1px;
 }
 
-#second_button{
-    margin-left:4px;
+#second_button {
+    margin-left: 4px;
 }
 
 /* CONTACTS */
 
-.contact{
-    display:flex;
-    justify-content:center
+.contact {
+    display: flex;
+    justify-content: center
 }
 
-#contacts_4_cards{
-    display:flex;
-    flex-direction:row;
+#contacts_4_cards {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    padding:20px 0px;
-    width:80%;
-    gap:20px;
+    padding: 20px 0px;
+    width: 80%;
+    gap: 20px;
 }
 
 .contact_card {
@@ -447,7 +463,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     flex-direction: column;
     justify-content: flex-start;
     width: 20%;
-    min-width:180px;
+    min-width: 180px;
     height: 160px;
     border: none;
     border-radius: 5%;
@@ -456,10 +472,10 @@ input[type="range"]::-webkit-slider-runnable-track {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.contact_card:hover{
+.contact_card:hover {
     background-color: #E3ECF1;
     cursor: pointer;
 }
@@ -493,7 +509,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .card_link {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
 /* FOOTER */
@@ -536,7 +552,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 
 @media (max-width: 1300px) {
-    
+
     body {
         font-family: "Bebas Neue", sans-serif;
         font-style: normal;
@@ -549,10 +565,239 @@ input[type="range"]::-webkit-slider-runnable-track {
         letter-spacing: 1px;
         font-size: 14px;
     }
-    
+
     .info {
         font-family: "Roboto", sans-serif;
         font-style: normal;
         font-size: 12px;
     }
-} 
+}
+
+/* TABLET & SMARTPHONE */
+
+@media (max-width: 1080px) {
+    #pic_chloe_titre_aventure {
+        gap: 10px;
+    }
+
+    .img_icon {
+        width: 30px !important;
+        height: 30px !important;
+        /* Forcer une taille fixe pour la hauteur */
+    }
+
+    #contacts_4_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 400px;
+        justify-content: space-around;
+        padding: 20px 0px;
+        width: 80%;
+        gap: 20px;
+    }
+
+    .article img {
+        width: 350px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 950px) {
+    /* Container principal pour le slider */
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Cacher les contrôles du range */
+input[type="range"] {
+    display: none;
+}
+
+/* Ajustement des indicateurs du slider */
+.slider-ticks {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.slider-ticks span {
+    text-align: center;
+    font-size: 16px;
+    width: 15%;
+    color: black;
+    cursor: pointer;
+}
+
+.slider-ticks span:hover {
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+}
+
+/* Conteneur pour l'image et le carré bleu */
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 20px auto;
+    width: 90%;
+}
+
+.article.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 20px auto;
+}
+
+.picture_title{
+    width: 100%; /* S'adapte à la largeur du conteneur parent */
+    max-width: 400px; 
+}
+.article img {
+    width: 100%; /* S'adapte à la largeur du conteneur parent */
+    max-width: 400px; /* Limite la taille maximale */
+    height: auto; /* Garde les proportions de l'image */
+    border-radius: 5px;
+}
+
+/* Conteneur du carré bleu (section contenant les icônes et textes) */
+.p_article {
+    width: 100%; /* S'adapte à la largeur du conteneur parent */
+    max-width: 400px; /* Limite la taille maximale */
+    margin-top: 30px;
+    background-color: #E3ECF1;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box; /* Assure que le padding est pris en compte dans la taille */
+}
+
+/* Icônes à l'intérieur du carré bleu */
+.p_article p span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Icônes ajustées */
+.img_icon {
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain;
+}
+
+
+    /*Burger*/
+
+    /* Cacher le menu par défaut */
+    .ul_header {
+        display: none;
+        opacity: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    /* Montrer le menu lorsqu'il est ouvert */
+    .show-menu .ul_header {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: white;
+        width: 200px;
+        padding: 20px 10px;
+        gap: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    /* Icône burger affichée */
+    .burger-icon {
+        display: block;
+        cursor: pointer;
+        margin-right: 30px;
+        font-size: 24px;
+    }
+
+    /* Centrage ou ajustement de l'alignement */
+    #container_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        /* Assurez-vous qu'il y a suffisamment de padding pour l'ensemble du contenu */
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    /* Style de base pour les liens du menu */
+    .ul_header a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+    }
+
+    /* Effet de survol pour les liens du menu */
+    .ul_header a:hover {
+        background-color: rgba(192, 192, 192, 0.3);
+        /* Fond en surbrillance */
+        color: rgb(50, 50, 50);
+        /* Changement de couleur du texte */
+    }
+
+    /* Surbrillance lors du hover sur les éléments du menu */
+    .show-menu .li_header:hover {
+        background-color: #e3ecf1;
+        /* Fond bleu clair */
+        color: black;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Ajustement des marges pour les éléments du menu */
+    .li_header {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 781px) {
+
+    #ocean_picture {
+        height: 150px
+    }
+
+    .project {
+        padding: 30px;
+        width: 100%;
+        ;
+        height: auto;
+        background-color: #E3ECF1;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    #ocean_picture {
+        height: 100px
+    }
+}

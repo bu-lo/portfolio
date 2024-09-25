@@ -32,6 +32,10 @@
                     <li class="li_header"><a href="#contacts_4_cards">CONTACTS</a></li>
                 </ul>
             </nav>
+            <!-- Bouton burger -->
+            <button id="burger-icon" class="burger-icon hidden" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -50,6 +54,10 @@
                     <li class="li_header"><a href="#contacts_4_cards">CONTACTS</a></li>
                 </ul>
             </nav>
+            <!-- Bouton burger -->
+            <button id="burger-icon" class="burger-icon hidden" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -171,7 +179,7 @@
                             <img class="img_icon" src="pictures/postgresql-icon.svg" alt="Icon Postgre">
                             <img class="img_icon" src="pictures/mysql.png" alt="Icon MySQL">
                         </span><br>
-                        <span>CONCEPTION / MODELISATION
+                        <span>CONCEPTION MODELISATION
                             <img class="img_icon" src="pictures/figma.png" alt="Icon Figma">
                             <img class="img_icon" src="pictures/uml.svg" alt="Icon UML">
                             <img class="img_icon" src="pictures/diagramme.png" alt="Icon Diagram Merise">
@@ -225,75 +233,73 @@
 
             <section class="projects">
 
-                    <div class="project">
-                        <h2>Application MEDIA PLAYER</h2><br>
-                        <p><U><b>Contexte :</b></U> Application responsive d'écoute de musiques type Deezer/Spotify.</p>
-                        <br>
-                        <p><U><b>Technologies :</b></U> HTML / CSS / JavaScript</p>
-                        <img src="pictures/media_player.png" alt="Capture d'écran de l'application Media Player"
-                            class="project_image">
-                        <p>
-                            <a href="https://github.com/bu-lo/JS_Project_MediaPlayer_AFPA" target="_blank">Github</a>
-                            <a id="second_button" href="https://bu-lo.github.io/JS_Project_MediaPlayer_AFPA/"
-                                target="_blank">Projet en ligne</a>
-                        </p>
-                    </div>
+                <div class="project">
+                    <h2>Application MEDIA PLAYER</h2><br>
+                    <p><U><b>Contexte :</b></U> Application responsive d'écoute de musiques type Deezer/Spotify.</p>
+                    <br>
+                    <p><U><b>Technologies :</b></U> HTML / CSS / JavaScript</p>
+                    <img src="pictures/media_player.png" alt="Capture d'écran de l'application Media Player"
+                        class="project_image">
+                    <p>
+                        <a href="https://github.com/bu-lo/JS_Project_MediaPlayer_AFPA" target="_blank">Github</a>
+                        <a id="second_button" href="https://bu-lo.github.io/JS_Project_MediaPlayer_AFPA/"
+                            target="_blank">Projet en ligne</a>
+                    </p>
+                </div>
 
-                    <div class="project">
-                        <h2>Application JAVA CARD MANAGER</h2><br>
-                        <p><U><b>Contexte :</b></U> Application Desktop de gestion de contacts avec un formulaire.</p>
-                        <br>
-                        <p><U><b>Technologies :</b></U> Java / JavaCard / JSON / QRCode / CSV / Methode SCRUM : Jira</p>
-                        <img src="pictures/JavaCard.png" alt="Capture d'écran de l'application Java Card Manager"
-                            class="project_image">
-                        <p>
-                            <a href="https://github.com/bu-lo/JavaFXML_Project_JavaCard_AFPA" target="_blank">Github</a>
-                        </p>
-                    </div>
+                <div class="project">
+                    <h2>Application JAVA CARD MANAGER</h2><br>
+                    <p><U><b>Contexte :</b></U> Application Desktop de gestion de contacts avec un formulaire.</p>
+                    <br>
+                    <p><U><b>Technologies :</b></U> Java / JavaCard / JSON / QRCode / CSV / Methode SCRUM : Jira</p>
+                    <img src="pictures/JavaCard.png" alt="Capture d'écran de l'application Java Card Manager"
+                        class="project_image">
+                    <p>
+                        <a href="https://github.com/bu-lo/JavaFXML_Project_JavaCard_AFPA" target="_blank">Github</a>
+                    </p>
+                </div>
 
-                    <div class="project">
-                        <h2>DATA BASE</h2><br>
-                        <p><U><b>Contexte :</b></U> Manipulation de bases de données + diagrammes MCD / MLD.</p><br>
-                        <p><U><b>Technologies :</b></U> Docker / DBeaver / PostgreSQL / Looping</p>
-                        <img src="pictures/preview_MLD.png" alt="Capture d'écran d'un diagramme MLD"
-                            class="project_image">
-                        <p>
-                            <a href="https://github.com/bu-lo/Database_Diagrams_MCD_MLD_AFPA/tree/main"
-                                target="_blank">Github</a>
-                        </p>
-                    </div>
+                <div class="project">
+                    <h2>DATA BASE</h2><br>
+                    <p><U><b>Contexte :</b></U> Manipulation de bases de données + diagrammes MCD / MLD.</p><br>
+                    <p><U><b>Technologies :</b></U> Docker / DBeaver / PostgreSQL / Looping</p>
+                    <img src="pictures/preview_MLD.png" alt="Capture d'écran d'un diagramme MLD" class="project_image">
+                    <p>
+                        <a href="https://github.com/bu-lo/Database_Diagrams_MCD_MLD_AFPA/tree/main"
+                            target="_blank">Github</a>
+                    </p>
+                </div>
 
-                    <div class="project">
-                        <h2>GESTION DE PROJET</h2><br>
-                        <p><U><b>Contexte :</b></U> Manipulation des outils de gestion de projets.</p><br>
-                        <p><U><b>Technologies :</b></U> Excel / PERT / GANTT</p>
-                        <img src="pictures/Pert_Gantt.png" alt="Capture d'écran d'un exercice de gestion de projet"
-                            class="project_image">
-                        <p>
-                            <a href="https://github.com/bu-lo/ProjectManagement_PERT_GANTT_AFPA"
-                                target="_blank">Github</a>
-                        </p>
-                    </div>
+                <div class="project">
+                    <h2>GESTION DE PROJET</h2><br>
+                    <p><U><b>Contexte :</b></U> Manipulation des outils de gestion de projets.</p><br>
+                    <p><U><b>Technologies :</b></U> Excel / PERT / GANTT</p>
+                    <img src="pictures/Pert_Gantt.png" alt="Capture d'écran d'un exercice de gestion de projet"
+                        class="project_image">
+                    <p>
+                        <a href="https://github.com/bu-lo/ProjectManagement_PERT_GANTT_AFPA" target="_blank">Github</a>
+                    </p>
+                </div>
 
-                    <div class="project">
-                        <h2>LINOGRAVURE bulo.lino</h2><br>
-                        <p><U><b>Contexte :</b></U> Activité graphique de linogravure.</p>
-                        <img src="pictures/whale.jpeg" alt="Linogravure baleine" class="project_image">
-                        <p>
-                            <a href="https://www.instagram.com/bulo.lino?igsh=emJ5dnE3dGxoNHgy"
-                                target="_blank">Instagram</a>
-                        </p>
-                    </div>
+                <div class="project">
+                    <h2>LINOGRAVURE bulo.lino</h2><br>
+                    <p><U><b>Contexte :</b></U> Activité graphique de linogravure.</p>
+                    <img src="pictures/whale.jpeg" alt="Linogravure baleine" class="project_image">
+                    <p>
+                        <a href="https://www.instagram.com/bulo.lino?igsh=emJ5dnE3dGxoNHgy"
+                            target="_blank">Instagram</a>
+                    </p>
+                </div>
 
-                    <div class="project">
-                        <h2>GITHUB <i class="fa-brands fa-github"></i></h2><br>
-                        <p><U><b>Contexte :</b></U> Dépôt Github avec mes projets & exercices.</p><br>
-                        <p><U><b>Technologies :</b></U> Java / HTML / CSS / JavaScript / Docker / PostgreSQL /...</p>
-                        <img src="pictures/Github.png" alt="Capture d'écran de ma page Github" class="project_image">
-                        <p>
-                            <a href="https://github.com/bu-lo" target="_blank">Github</a>
-                        </p>
-                    </div>
+                <div class="project">
+                    <h2>GITHUB <i class="fa-brands fa-github"></i></h2><br>
+                    <p><U><b>Contexte :</b></U> Dépôt Github avec mes projets & exercices.</p><br>
+                    <p><U><b>Technologies :</b></U> Java / HTML / CSS / JavaScript / Docker / PostgreSQL /...</p>
+                    <img src="pictures/Github.png" alt="Capture d'écran de ma page Github" class="project_image">
+                    <p>
+                        <a href="https://github.com/bu-lo" target="_blank">Github</a>
+                    </p>
+                </div>
             </section>
 
         </div>
