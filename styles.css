@@ -573,9 +573,11 @@ input[type="range"]::-webkit-slider-runnable-track {
     }
 }
 
-/* TABLET & SMARTPHONE */
+/* TABLET */
 
 @media (max-width: 1080px) {
+
+    /*//////////////////////////////////////////////////////////////////*/
     #pic_chloe_titre_aventure {
         gap: 10px;
     }
@@ -604,99 +606,164 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 @media (max-width: 950px) {
+    /*//////////////////////////////////////////////////////////////////*/
+
+    .shadow_border {
+        margin-bottom: 15px;
+    }
+
+    #header_header {
+        margin-bottom: 15px;
+    }
+
+    /* SECTION PRESENTATION / PHOTO PROFIL */
+
+    #presentation_chloe {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #pic_chloe_titre_aventure {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 40%;
+        gap: 15px;
+    }
+
+    #photo_container {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+
+    .photo_ronde {
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #aventure_texte {
+        width: 70%;
+        padding: 40px;
+    }
+
+    #h1_aventure {
+        font-size: 60px;
+        letter-spacing: 4px;
+        line-height: 50px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+
+
+    /*SLIDER*/
     /* Container principal pour le slider */
-.slider-container {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 10px;
-}
+    .slider-container {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
 
-/* Cacher les contrôles du range */
-input[type="range"] {
-    display: none;
-}
+    /* Cacher les contrôles du range */
+    input[type="range"] {
+        display: none;
+    }
 
-/* Ajustement des indicateurs du slider */
-.slider-ticks {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-    margin-top: 15px;
-}
+    /* Ajustement des indicateurs du slider */
+    .slider-ticks {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        margin-top: 15px;
+    }
 
-.slider-ticks span {
-    text-align: center;
-    font-size: 16px;
-    width: 15%;
-    color: black;
-    cursor: pointer;
-}
+    .slider-ticks span {
+        text-align: center;
+        font-size: 16px;
+        width: 15%;
+        color: black;
+        cursor: pointer;
+    }
 
-.slider-ticks span:hover {
-    color: rgb(192, 192, 192);
-    text-decoration: none;
-}
+    .slider-ticks span:hover {
+        color: rgb(192, 192, 192);
+        text-decoration: none;
+    }
 
-/* Conteneur pour l'image et le carré bleu */
-.article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto 20px auto;
-    width: 90%;
-}
+    /* Conteneur pour l'image et le carré bleu */
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto 20px auto;
+        width: 90%;
+    }
 
-.article.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto 20px auto;
-}
+    .article.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto 20px auto;
+    }
 
-.picture_title{
-    width: 100%; /* S'adapte à la largeur du conteneur parent */
-    max-width: 400px; 
-}
-.article img {
-    width: 100%; /* S'adapte à la largeur du conteneur parent */
-    max-width: 400px; /* Limite la taille maximale */
-    height: auto; /* Garde les proportions de l'image */
-    border-radius: 5px;
-}
+    .picture_title {
+        width: 100%;
+        /* S'adapte à la largeur du conteneur parent */
+        max-width: 400px;
+    }
 
-/* Conteneur du carré bleu (section contenant les icônes et textes) */
-.p_article {
-    width: 100%; /* S'adapte à la largeur du conteneur parent */
-    max-width: 400px; /* Limite la taille maximale */
-    margin-top: 30px;
-    background-color: #E3ECF1;
-    border-radius: 5px;
-    padding: 20px;
-    box-sizing: border-box; /* Assure que le padding est pris en compte dans la taille */
-}
+    .article img {
+        width: 100%;
+        /* S'adapte à la largeur du conteneur parent */
+        max-width: 400px;
+        /* Limite la taille maximale */
+        height: auto;
+        /* Garde les proportions de l'image */
+        border-radius: 5px;
+    }
 
-/* Icônes à l'intérieur du carré bleu */
-.p_article p span {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-}
+    /* Conteneur du carré bleu (section contenant les icônes et textes) */
+    .p_article {
+        width: 100%;
+        /* S'adapte à la largeur du conteneur parent */
+        max-width: 400px;
+        /* Limite la taille maximale */
+        margin-top: 30px;
+        background-color: #E3ECF1;
+        border-radius: 5px;
+        padding: 20px;
+        box-sizing: border-box;
+        /* Assure que le padding est pris en compte dans la taille */
+    }
 
-/* Icônes ajustées */
-.img_icon {
-    width: 40px !important;
-    height: 40px !important;
-    object-fit: contain;
-}
+    /* Icônes à l'intérieur du carré bleu */
+    .p_article p span {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
 
+    /* Icônes ajustées */
+    .img_icon {
+        width: 40px !important;
+        height: 40px !important;
+        object-fit: contain;
+    }
 
+    /* HEADER */
     /*Burger*/
 
     /* Cacher le menu par défaut */
@@ -780,10 +847,65 @@ input[type="range"] {
 }
 
 @media (max-width: 781px) {
+    /*//////////////////////////////////////////////////////////////////*/
+
+    .shadow_border {
+        margin-bottom: 12px;
+    }
+
+    #header_header {
+        margin-bottom: 12px;
+    }
 
     #ocean_picture {
         height: 150px
     }
+
+    /* SECTION PRESENTATION / PHOTO PROFIL */
+
+    #presentation_chloe {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #pic_chloe_titre_aventure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        gap: 0px;
+    }
+
+    #photo_container {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+
+    .photo_ronde {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #aventure_texte {
+        width: 80%;
+        padding: 20px 30px;
+    }
+
+    #h1_aventure {
+        font-size: 50px;
+        letter-spacing: 4px;
+        line-height: 50px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    /* PROJECTS */
 
     .project {
         padding: 30px;
@@ -793,11 +915,135 @@ input[type="range"] {
         background-color: #E3ECF1;
         border-radius: 5px;
     }
+
 }
 
+@media (max-width: 560px) {
+    /* SECTION PRESENTATION / PHOTO PROFIL */
+
+    #presentation_chloe {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #pic_chloe_titre_aventure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        gap: 0px;
+    }
+
+    #photo_container {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+
+    .photo_ronde {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #aventure_texte {
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    #h1_aventure {
+        font-size: 40px;
+        letter-spacing: 3px;
+        line-height: 40px;
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+
+
+/* SMARPHONE */
+
 @media (max-width: 425px) {
+    /*//////////////////////////////////////////////////////////////////*/
+
+    .shadow_border {
+        margin-bottom: 10px;
+    }
+
+    #header_header {
+        margin-bottom: 10px;
+    }
 
     #ocean_picture {
         height: 100px
+    }
+
+    p{
+        font-size:12px;
+        line-height: 15px;
+    }
+
+    /* SECTION PRESENTATION / PHOTO PROFIL */
+
+    #presentation_chloe {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #pic_chloe_titre_aventure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        gap: 0px;
+    }
+
+    #photo_container {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+
+    .photo_ronde {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #aventure_texte {
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    #h1_aventure {
+        font-size: 35px;
+        letter-spacing: 2px;
+        line-height: 30px;
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    /*//////////////////////////////////////////////////////////////////*/
+
+    .shadow_border {
+        margin-bottom: 7px;
+    }
+
+    #header_header {
+        margin-bottom: 7px;
+    }
+
+    #ocean_picture {
+        height: 80px
     }
 }
