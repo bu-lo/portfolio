@@ -552,6 +552,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 
 @media (max-width: 1300px) {
+    /*/////////////////////////////////////////////////*/
 
     body {
         font-family: "Bebas Neue", sans-serif;
@@ -659,109 +660,90 @@ input[type="range"]::-webkit-slider-runnable-track {
         text-align: left;
         margin-top: 20px;
     }
+/**************************************************************************************************/
 
+.slider-container {
+    display: none;
+}
 
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrer horizontalement les éléments */
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #E3ECF1;
+    border-radius: 20px;
+    width: 90%;
+}
 
-    /*SLIDER*/
-    /* Container principal pour le slider */
-    .slider-container {
-        width: 80%;
-        margin: 0 auto;
-        padding-bottom: 10px;
-    }
+#article3 {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #E3ECF1;
+    border-radius: 20px;
+    width: 90%;
+}
 
-    /* Cacher les contrôles du range */
-    input[type="range"] {
-        display: none;
-    }
+.picture_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
-    /* Ajustement des indicateurs du slider */
-    .slider-ticks {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        width: 100%;
-        margin-top: 15px;
-    }
+.picture_title img {
+    width: 90%; 
+    height: auto;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
 
-    .slider-ticks span {
-        text-align: center;
-        font-size: 16px;
-        width: 15%;
-        color: black;
-        cursor: pointer;
-    }
+.p_article {
+    text-align: center;
+    color: black;
+    padding: 0px;
+    width:100%;
+    background-color: transparent; 
+    margin: 0px;
+}
 
-    .slider-ticks span:hover {
-        color: rgb(192, 192, 192);
-        text-decoration: none;
-    }
+.p_article p {
+    font-size: 14px;
+    line-height: 1.3;
+    margin:0px auto 20px auto;
+    width:90%;
+    background-color: white;
+    border-radius: 5px;
+}
 
-    /* Conteneur pour l'image et le carré bleu */
-    .article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 40px auto 20px auto;
-        width: 90%;
-    }
+.img_icon {
+    width: 40px !important;
+    height: 40px !important;
+    /* Forcer une taille fixe pour la hauteur */
+    object-fit: contain;
+    margin-top: 0px !important;
+}
 
-    .article.active {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 40px auto 20px auto;
-    }
+.p_article p span {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
 
-    .picture_title {
-        width: 100%;
-        /* S'adapte à la largeur du conteneur parent */
-        max-width: 400px;
-    }
+.article * {
+    max-width: 100%;
+}
 
-    .article img {
-        width: 100%;
-        /* S'adapte à la largeur du conteneur parent */
-        max-width: 400px;
-        /* Limite la taille maximale */
-        height: auto;
-        /* Garde les proportions de l'image */
-        border-radius: 5px;
-    }
-
-    /* Conteneur du carré bleu (section contenant les icônes et textes) */
-    .p_article {
-        width: 100%;
-        /* S'adapte à la largeur du conteneur parent */
-        max-width: 400px;
-        /* Limite la taille maximale */
-        margin-top: 30px;
-        background-color: #E3ECF1;
-        border-radius: 5px;
-        padding: 20px;
-        box-sizing: border-box;
-        /* Assure que le padding est pris en compte dans la taille */
-    }
-
-    /* Icônes à l'intérieur du carré bleu */
-    .p_article p span {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 16px;
-        letter-spacing: 1px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
-    }
-
-    /* Icônes ajustées */
-    .img_icon {
-        width: 40px !important;
-        height: 40px !important;
-        object-fit: contain;
-    }
+/*********************************************************************************************************/
 
     /* HEADER */
     /*Burger*/
@@ -910,7 +892,6 @@ input[type="range"]::-webkit-slider-runnable-track {
     .project {
         padding: 30px;
         width: 100%;
-        ;
         height: auto;
         background-color: #E3ECF1;
         border-radius: 5px;
@@ -918,7 +899,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 }
 
-@media (max-width: 560px) {
+@media (max-width: 560px) {/*////////////////////////////////////////////////////*/
     /* SECTION PRESENTATION / PHOTO PROFIL */
 
     #presentation_chloe {
@@ -962,6 +943,100 @@ input[type="range"]::-webkit-slider-runnable-track {
         text-align: left;
         margin-top: 10px;
     }
+
+    /* CONTACTS */
+
+    .contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contacts_4_cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 20px 0px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .contact_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 25%;
+        min-width: 180px;
+        height: 140px;
+        border: none;
+        border-radius: 5%;
+        background-color: white;
+        padding: 15px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact_card:hover {
+        background-color: #E3ECF1;
+        cursor: pointer;
+    }
+
+    .card_circle {
+        width: 50px;
+        height: 50px;
+        background-color: #083967;
+        border-radius: 50%;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_circle_icon {
+        color: white;
+        font-size: 25px;
+    }
+
+    .card_heading {
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    .info {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 11px;
+    }
+
+    .card_link {
+        text-decoration: none;
+        color: black;
+    }
+    
+    /*ARTICLE 3 CDA-AFPA ICONES*/
+
+    .img_icon {
+        width: 28px !important;
+        height: 30px !important;
+    }
+    
+    .p_article p span {
+        font-size: 14px;
+        gap: 5 px;
+    }
+
+        /* CONTACTS */
+    
+        #contacts_4_cards {
+            width: 90%;
+            gap: 10px;
+        }
+    
+        .contact_card {
+            min-width: 160px;
+        }
 }
 
 
@@ -982,9 +1057,19 @@ input[type="range"]::-webkit-slider-runnable-track {
         height: 100px
     }
 
-    p{
-        font-size:12px;
+    p {
+        font-size: 12px;
         line-height: 15px;
+    }
+
+    /*PROJECTS*/
+    .projects {
+        width: 100%;
+        padding: 20px;
+    }
+
+    a {
+        font-size: 16px;
     }
 
     /* SECTION PRESENTATION / PHOTO PROFIL */
@@ -1030,6 +1115,60 @@ input[type="range"]::-webkit-slider-runnable-track {
         text-align: left;
         margin-top: 10px;
     }
+
+    #aventure_texte a {
+        font-size:12px;
+    }
+
+    /*ARTICLE 3 - AFPA CDA COMPETENCES ICONES */
+
+    .article{
+        margin:20px auto;
+    }
+    
+    .img_icon {
+        width: 28px !important;
+        height: 30px !important;
+        /* Forcer une taille fixe pour la hauteur */
+        object-fit: contain;
+        margin-top: 0px !important;
+    }
+    
+    .p_article p span {
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .p_article p{
+        width:95%;
+        font-size:12px;
+    }
+
+    .picture_title img{
+        width:95%;
+    }
+}
+
+@media (max-width: 409px){
+    /*///////////////////////////////////////////////////////////////////*/
+        /* CONTACTS */
+    
+        #contacts_4_cards {
+            padding: 20px 0px;
+            width: 100%;
+            gap: 10px;
+        }
+    
+        .contact_card {
+            width:80%;
+            height: 140px;
+            margin: 10px auto;
+            padding-left: 40px;
+        }
+    
 }
 
 @media (max-width: 375px) {
@@ -1046,4 +1185,6 @@ input[type="range"]::-webkit-slider-runnable-track {
     #ocean_picture {
         height: 80px
     }
+
+
 }
