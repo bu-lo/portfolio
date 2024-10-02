@@ -1,1 +1,1 @@
-<img align="center" src="preview_portfolio.PNG" width="900" height="550" />
+<img align="center" src="preview_portfolio.PNG" width="800" height="550" />
