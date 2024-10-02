@@ -743,6 +743,14 @@ input[type="range"]::-webkit-slider-runnable-track {
     max-width: 100%;
 }
 
+#article1{
+    display:none !important;
+}
+
+#article2{
+    display:none !important;
+}
+
 /*********************************************************************************************************/
 
     /* HEADER */
