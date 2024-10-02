@@ -184,7 +184,7 @@ p {
     width: 40%;
     background-color: #E3ECF1;
     border-radius: 5%;
-    padding: 20px;
+    padding: 30px;
 }
 
 #h1_aventure {
@@ -884,7 +884,6 @@ input[type="range"]::-webkit-slider-runnable-track {
 
     #aventure_texte {
         width: 80%;
-        padding: 20px 30px;
     }
 
     #h1_aventure {
